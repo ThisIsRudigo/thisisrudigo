@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="998" height="1001" viewBox="0 0 998 1001">
+  <defs>
+    <filter id="a" width="142%" height="142%" x="-21%" y="-10.5%" filterUnits="objectBoundingBox">
+      <feOffset dy="87" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="43.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="b" x1="-21.526%" x2="49.32%" y1="50.68%" y2="-20.129%">
+      <stop stop-color="#E01926" offset="0%"/>
+      <stop stop-color="#F55D56" offset="100%"/>
+    </linearGradient>
+    <linearGradient id="c" x1="-108.782%" x2="48.49%" y1="51.451%" y2="-105.821%">
+      <stop stop-color="#E01926" offset="0%"/>
+      <stop stop-color="#F55D56" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" filter="url(#a)" transform="translate(85)">
+    <path fill="#FFFFFF" d="M367,734.498 C569.444747,734.498 733.558,570.185936 733.558,367.498 C733.558,164.809177 569.444747,0.498 367,0.498 C164.555253,0.498 0.441999719,164.809177 0.441999719,367.498 C0.441999719,570.185936 164.555253,734.498 367,734.498 Z" transform="translate(47 46)"/>
+    <path fill="url(#b)" d="M414,829 C185.631,829 0,642.81 0,414.284 C0,185.758 185.631,0 414,0 C642.369,0 828,185.758 828,414.284 C828,642.81 642.369,829 414,829 Z M414,116.207 C249.522,116.207 116.127,250.126 116.127,414.284 C116.127,578.442 249.954,712.361 414,712.361 C578.046,712.361 711.873,578.442 711.873,414.284 C711.873,250.126 578.478,116.207 414,116.207 Z"/>
+    <path fill="url(#c)" d="M186.494,373.244 C83.7498,373.244 3.29361e-06,289.437 3.29361e-06,186.622 C3.29361e-06,83.8072 83.7498,-3.29587e-06 186.494,-3.29587e-06 C289.239,-3.29587e-06 372.989,83.8072 372.989,186.622 C372.989,289.437 289.671,373.244 186.494,373.244 Z M186.494,108.863 C143.756,108.863 109.22,143.423 109.22,186.19 C109.22,228.958 143.756,263.517 186.494,263.517 C229.233,263.517 263.769,228.958 263.769,186.19 C263.769,143.423 229.233,108.863 186.494,108.863 Z" transform="translate(227.5 228.1)"/>
+  </g>
+</svg>
