@@ -100,7 +100,11 @@ a.navbar-brand {
     border-top: 3px solid white;
     padding: 70px;
     padding-top: 150px;
-    
+}
+
+.logo{
+    width: 150px;
+    height: 30px;
 }
 
 .more-body {
@@ -123,9 +127,10 @@ a.navbar-brand {
 
 a.btn-clear {
     border-radius: 10px;
-    color: #F1333F !important;
+    color: #FFF !important;
     background: white;
     font-weight: bolder !important;
+    background-color: rgb(241, 51, 63);
 }
 
 #four {
