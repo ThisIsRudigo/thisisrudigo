@@ -126,9 +126,9 @@ a.navbar-brand {
 }
 
 a.btn-clear {
-    border-radius: 10px;
-    color: #FFF !important;
-    background: white;
+    border-radius: 4px;
+    color: /*#C9C9C9*/ #fff !important;
+    padding: 15px 30px !important;
     font-weight: bolder !important;
     background-color: rgb(241, 51, 63);
 }
