@@ -1,5 +1,5 @@
 body {
-    font-family:  Poppins, sans-serif;
+    font-family: Poppins, sans-serif;
     overflow-x: hidden
 }
 
@@ -52,7 +52,6 @@ a.navbar-brand {
 }
 
 #landing {
-    
     padding-bottom: 20px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(../img/BG.png);
     background-size: cover;
@@ -102,7 +101,7 @@ a.navbar-brand {
     padding-top: 150px;
 }
 
-.logo{
+.logo {
     width: 150px;
     height: 30px;
 }
@@ -127,7 +126,8 @@ a.navbar-brand {
 
 a.btn-clear {
     border-radius: 4px;
-    color: /*#C9C9C9*/ #fff !important;
+    color: /*#C9C9C9*/
+    #fff !important;
     padding: 15px 30px !important;
     font-weight: bolder !important;
     background-color: rgb(241, 51, 63);
@@ -143,7 +143,6 @@ a.btn-clear {
 
 #five {
     width: 100%;
-    
     background: #73d7fc;
     padding: 70px;
     padding-top: 150px;
@@ -167,19 +166,19 @@ a.btn-clear {
     height: auto;
 }
 
-#six{
+#six {
     padding-bottom: 50px
 }
 
-#blue{
+#blue {
     width: 100%;
     height: 300px;
-    background-image: linear-gradient(to right bottom,  #6899d3, #73d7fc);
+    background-image: linear-gradient(to right bottom, #6899d3, #73d7fc);
     border-right: 2px solid white;
     border-left: 2px solid white;
 }
 
-#red{
+#red {
     width: 100%;
     height: 300px;
     background-image: linear-gradient(to left bottom, #c92834, #9d4d4d);
@@ -187,13 +186,14 @@ a.btn-clear {
     border-right: 2px solid white;
 }
 
-.footer{
+#contact {
     padding: 60px
 }
 
-.grey-header{
+.grey-header {
     color: #525050
 }
+
 
 /*Smaller acreens*/
 
@@ -241,7 +241,7 @@ a.btn-clear {
         font-size: 50px;
         width: 100%
     }
-    #four{
+    #four {
         padding-top: 30px;
         padding: 10px
     }
