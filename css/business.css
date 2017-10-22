@@ -1,0 +1,76 @@
+.navbar {
+    height: 50px
+}
+
+.img-rounded {
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 2px solid rgba(102, 102, 238, 0.342)
+}
+
+#main-body {
+    background: white;
+    margin-top: 20px;
+    box-shadow: 10px;
+}
+
+.fa-cog {
+    color: white;
+    margin-left: 10px;
+    margin-right: 40px
+}
+
+#cover-photo {
+    width: 100%;
+    min-height: 320px;
+    background-image: linear-gradient(rgba(161, 210, 248, 0.212), rgba(0, 0, 0, 0.445)), url(../img/cover-photo2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#details {
+    margin-top: -100px
+}
+
+#profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
+
+.name {
+    margin-top: 60px;
+    font-weight: bolder
+}
+
+#main-content{
+    margin-top: 40px
+}
+
+.nav-link.active{
+    background-color: #5aa7e2 !important;
+    color: white !important ;
+    font-size: 18px;
+    transition: background-color 0.9s linear;
+    transform: scale(1.1);
+}
+
+.nav-link{
+    border: 1px solid #5aa7e2 !important;
+    margin-left: 10px !important;
+}
+
+.logos{
+    margin-right: 10px
+}
+
+body{
+    padding-bottom: 70px
+}
+
+.clear{
+    display: block;
+    transition: display 1s linear;
+}
