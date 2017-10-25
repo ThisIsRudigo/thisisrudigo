@@ -68,6 +68,7 @@ a.navbar-brand {
     background: rgb(130, 181, 33);
     padding: 70px;
     padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .small-head {
@@ -99,6 +100,7 @@ a.navbar-brand {
     border-top: 3px solid white;
     padding: 70px;
     padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .logo {
@@ -138,6 +140,7 @@ a.btn-clear {
     background: #F1333F;
     padding: 70px;
     padding-top: 150px;
+    padding-bottom: 150px;
     border-top: 3px solid white;
 }
 
@@ -203,7 +206,7 @@ a.btn-clear {
     }
     #two,
     .three,
-    #five {
+    #five { 
         padding: 10px;
         padding-top: 70px;
     }
@@ -244,5 +247,57 @@ a.btn-clear {
     #four {
         padding-top: 30px;
         padding: 10px
+    }
+}
+
+@media(min-width: 600px) and (max-width: 800px) {
+    .big {
+        margin-top: 50px
+    }
+    #two,
+    .three,
+    #five { 
+        padding: 10px;
+        padding-top: 70px;
+        padding-bottom  : 70px;
+    }
+    .more-body {
+        color: white;
+        font-weight: bolder;
+        font-size: 25px;
+    }
+    .small-head {
+        font-size: 14px;
+        font-weight: bolder;
+        color: white;
+    }
+    .body {
+        font-size: 30px;
+        font-weight: bolder;
+        color: white;
+    }
+    .preview {
+        transform: rotate(315deg);
+        top: 0;
+        z-index: 2;
+        position: relative;
+        margin-top: 0px;
+        width: 300px;
+        height: 300px
+    }
+    .couch {
+        margin-top: 80px
+    }
+    .btn-follow {
+        font-weight: bold;
+        font-size: 50px;
+        width: 100%
+    }
+    #four {
+        padding-top: 70px !important;
+        padding-bottom: 70px !important;
+    }
+    img.img-fluid{
+        margin-top: 100px
     }
 }
