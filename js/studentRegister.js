@@ -44,6 +44,8 @@ $(document).ready(function(){
        var email = $('#useremail');
        var password = $('#userpassword');
        var accountType = $('#accountType');
+       var studentType = $('#studentType');
+       var studentStack= $('#studentStack');
 
       
 
@@ -53,6 +55,8 @@ $(document).ready(function(){
        	email: email.val(),
        	password: password.val(),
        	accountType: accountType.val(),
+       	studentType: studentType.val(),
+       	stack: studentStack.val()
        }
 
        $.ajax({
@@ -65,7 +69,7 @@ $(document).ready(function(){
        	},
          error:function(status){
          	$('#message').css('display', 'block'),
-         	$('#message').append(status.responseJSON.error);
+         	$('#message').html(status.responseJSON.error);
          }
        });
 

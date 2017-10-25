@@ -1,8 +1,9 @@
 body{
 	background-color:black;
+	font-family: Poppins;
 }
 .container{
-	margin-top: 30px;
+	margin-top: 15px;
 	width: 600px;
 	background-color: white;
 	padding: 60px;
@@ -24,6 +25,10 @@ body{
 
 }
 
+.btn-primary{
+	margin-top: 0px !important;
+}
+
 .container .first
 {
 	padding-top: 170px;
@@ -43,7 +48,7 @@ body{
 }
 
 .imgCont img{
-	margin-left: -200px;
+	margin-left: -170px;
 	z-index: 1000;
 	top: 0
 }

@@ -101,7 +101,7 @@ $('document').ready(function() {
        	},
          error:function(status){
          	$('#message').css('display', 'block'),
-         	$('#message').append(status.responseJSON.error);
+         	$('#message').html(status.responseJSON.error);
          }
        });
 
