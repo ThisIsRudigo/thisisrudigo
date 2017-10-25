@@ -1,45 +1,6 @@
 
 $('document').ready(function() {
 
-	/*student registration*/
-
-	// $('#signin').click(function(e){
- //       e.preventDefault()
-
-
-
-
- //       /*input your variable*/
- //       var name = $('#name');
- //       var email = $('#email');
- //       var password = $('#password');
- //       var accountType = $('#accountType');
-
-      
-
-
- //       var student = {
- //       	name: name.val(),
- //       	email: email.val(),
- //       	password: password.val(),
- //       	accountType: accountType.val(),
- //       }
-
- //       $.ajax({
- //       	type: 'POST',
- //       	url: 'http://18.220.175.109/account/register/admin',
- //       	data: student,
- //       	dataType: "JSON",
- //       	success: function(){
- //       		alert('sucessful registration');
- //       	},
- //         error:function(status){
- //         	alert('error '+ status.responseText);
- //         }
- //       });
-
-	// });
-
 			
 				     
 				/*business registration*/
@@ -80,60 +41,71 @@ $('document').ready(function() {
 
 
 
-					// Email validation
+// Email validation
+	$('#email').focusout(function () {
+	    function isEmail(email) {
+	        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+	        return regex.test(email);
+	    }
 
-					$('#email').focusout(function () {
-						    function isEmail(email) {
-						        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-						        return regex.test(email);
-						    }
+	    var emailinput = $(this).val();
 
-						    var emailinput = $(this).val();
+	    if (emailinput === "" || !(isEmail(emailinput))) {
+	        $('#invalid').css('display', 'block');
+	    }else{
+	    	$('#invalid').css('display', 'none')
+	    }
+	});  
 
-						    if (emailinput === "" || !(isEmail(emailinput))) {
-						        $('#invalid').css('display', 'block');
-						    }else{
-						    	$('#invalid').css('display', 'none')
-						    }
-						});
-				     
+//password validation
 
-				/*student login*/
+	$('#userpassword').focusout(function(){
 
-					$('#login').click(function(e){
-				       e.preventDefault()
+		var pass= $('#userpassword').val();
+
+		if(pass.length < 6){
+			$('#wpass').css('display', 'block');
+		}else{
+			$('#wpass').css('display', 'none');
+		}
+	});     
+
+/*student login*/
+
+	$('#login').click(function(e){
+       e.preventDefault()
+       
+
+       /*input your variable*/
+       
+       var email = $('#email');
+       var password = $('#password');
+       
+
+       var studentLogin = {
+       	
+       	email: email.val().trim(),
+       	password: password.val().trim(),
+       	
+       }
 
 
-				       /*input your variable*/
-				       
-				       var email = $('#email');
-				       var password = $('#password');
-				       
+       $.ajax({
+       	type: 'POST',
+       	url: 'http://18.220.175.109/account/login',
+       	data: studentLogin,
+       	dataType: "JSON",
+       	success: function(){
+       		// alert('sucessful login');
+       		window.location= 'business.html';
+       	},
+         error:function(status){
+         	$('#message').css('display', 'block'),
+         	$('#message').append(status.responseJSON.error);
+         }
+       });
 
-				       var studentLogin = {
-				       	
-				       	email: email.val().trim(),
-				       	password: password.val().trim(),
-				       	
-				       }
-
-
-				       $.ajax({
-				       	type: 'POST',
-				       	url: 'http://18.220.175.109/account/login',
-				       	data: studentLogin,
-				       	dataType: "JSON",
-				       	success: function(){
-				       		// alert('sucessful login');
-				       		window.location= 'business.html';
-				       	},
-				         error:function(status){
-				         	$('#message').css('display', 'block'),
-				         	$('#message').append(status.responseJSON.error);
-				         }
-				       });
-
-                      });
+      });
 
 
                      /*forgotten password*/

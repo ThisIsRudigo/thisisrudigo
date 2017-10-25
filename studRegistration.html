@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, minimum-scale=1, user-scale=no">
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+  	<link rel="stylesheet" href="css/studRegistration.css">
+  	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <title> Student registration </title>
+    </head>
+    <body>
+
+                        
+
+                            <!--form-->
+                              
+                      <div class="container">
+                        <div class="imgCont text-center">
+                          <img class="img-responsive" src="img/imag.jpg" alt="image">
+                          <h4 class="text-center"><b>STUDENT REGISTRATION</b> </h4>
+                        </div>
+                        <form role="form">
+                                
+                           <div class="form-group form-group-lg first">
+                            
+                            <input  type="text" class="form-control " id="username" placeholder="Name" required>
+                          </div>
+                          
+                          <div class="form-group form-group-lg">
+                            
+                            <input  type="email" class="form-control " id="useremail" placeholder="Email" required>
+                            <p style="color: red; background: pink; padding: 10px; border-radius: 10px; display: none; transition: display 1.5s linear; margin-top: 20px" id="wrong">Your email address is invalid... Try another.</p>
+                          </div>
+                          
+                          <div class="form-group form-group-lg">
+                            
+                            <input type="password" class="form-control " id="userpassword" placeholder="Password" required>
+                            <p style="color: red; background: pink; padding: 10px; border-radius: 10px; display: none; transition: display 1.5s linear; margin-top: 20px" id="wpass">Sorry your password is less than 6 digits</p>
+                          </div>
+
+                          <div class="form-group form-group-lg">
+                            
+                            <select class="form-control" id="accountType">
+                              <option value="" selected="selected">Type of student</option>
+                              <option value="remote">Remote</option>
+                              <option value="local">Local</option>
+                              
+                            </select>
+                          </div>
+
+                          <div class="text-center">
+                            <p style="color: red; background: pink; padding: 10px; border-radius: 10px; display: none; transition: display 1.5s linear" id="message"></p>
+                          </div>
+                          
+                          
+                           
+                                                    
+                          <button type="submit"  id="signin" class="btn btn-primary btn-lg">submit</button>
+
+                        </form>
+                      </div>
+
+
+
+       <script src="js/jquery-3.2.1.min.js"></script>
+       <script type="text/javascript" src="js/studentRegister.js"></script>
+       <script type="text/javascript" src="js/bootstrapz.js"></script>
+  
+  </body>
+</html>
+
