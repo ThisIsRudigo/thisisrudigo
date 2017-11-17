@@ -1,0 +1,43 @@
+.nav-link {
+    color: #9D9D9D !important;
+    font-weight: bolder;
+}
+
+.navbar {
+    border: 0px;
+    border-bottom: 1px solid #ccc;
+    -webkit-box-shadow: 0px !important;
+    box-shadow: 0px !important;
+    max-height: 70px
+}
+
+.navbar-toggler-icon {
+    border-color: rgb(226, 225, 225);
+    border-style: solid;
+    border-width: 1px;
+    background: rgb(241, 51, 63);
+    border-radius: 5px
+}
+
+.nav-item {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+a.navbar-barnd {
+    max-height: 70px !important
+}
+
+.logo {
+    width: 150px;
+    height: 30px;
+}
+
+a.btn-clear {
+    border-radius: 4px;
+    color: /*#C9C9C9*/
+    #fff !important;
+    padding: 15px 30px !important;
+    font-weight: bolder !important;
+    background-color: rgb(241, 51, 63);
+}
