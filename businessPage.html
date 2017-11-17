@@ -44,10 +44,13 @@
                     <a class="nav-link" href="#register"><b>Register</b></a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="aboutus.html"><b>About</b></a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#contact"><b>Contact</b></a>
                 </li>
                 <div>
-                    <a class="btn btn-clear btn-md navbar-right navbar-btn" href="login.html" style="box-shadow: 0px 0px; border-radius: 70px">Login</a>
+                    <a class="btn btn-clear btn-md navbar-right navbar-btn" href="login.html" style="box-shadow: 0px 0px; border-radius: 70px; background: rgb(241, 51, 63)">Login</a>
                 </div>
             </ul>
             <!-- Collapsible content -->
@@ -80,7 +83,7 @@
             </div><br>
             <div class="container">
                 <div class="mx-auto d-block" id="form"><br>
-                    <div class="input-group">
+                    <!-- <div class="input-group">
                         <div class="input-group-addon">
                             <i class="fa fa-user"></i>
                         </div>
@@ -88,7 +91,7 @@
                     </div><br>
                     <div class="input-group">
                         <div class="input-group-addon">
-                            <i class="fa fa-user"></i>
+                            <i class="fa fa-at"></i>
                         </div>
                         <input class="form-control" name="email" type="email" id="email" placeholder="Business Email"><br>
                     </div><br>
@@ -103,26 +106,22 @@
                             <i class="fa fa-lock"></i>
                         </div>
                         <input class="form-control" name="password" type="password" id="password" placeholder="Passsword"><br>
-                    </div><br>
+                    </div><br> -->
+                    <input class="form-form" name="name" type="text" id="name" placeholder="Business Name"><br><br>
+                    <input class="form-form" name="email" type="email" id="email" placeholder="Business Email"><br><br>
+                    <input class="form-form" name="password" type="password" id="password" placeholder="Password"><br><br>
+                    <input class="form-form" name="businessType" type="text" id="businessType" placeholder="Business Type"><br><br>
+
                     <button class="btn btn-reg d-block mx-auto" id="regis">Submit</button>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- method "POST"
-	request parameters (json)
-        {
-         "password" : ******  // (6 and above string),
-         "name": "east of the sunrise IT Resources" // (string),
-          "email": "test@test.com" // (string),
-          "businessType": "Infotech" // (string)
-         } -->
-
     <section id="contact">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-md-1"></div>
                 <div class="col-md-2">
                     <h5 class="grey-header"><b><B>CONTACT</B></b>
                     </h5>
@@ -153,7 +152,7 @@
                         <li><a href="http://medium.com/thisisrudigo" class="grey-text">Medium</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 text-left">
+                <div class="col-md-2 text-left">
                     <h5 class="grey-header"><b><B>Rudigo.com</B></b>
                     </h5>
                     <div class="text-left">
@@ -184,9 +183,9 @@
         $(document).ready(function() {
             $(window).scroll(function() {
                 if ($(document).scrollTop() > 800) {
-                    $(".btn-clear").css("background-color", "purple");
+                    $(".btn-clear, .navbar-toggler-icon").css("background-color", "purple");
                 } else {
-                    $(".btn-clear").css("background-color", "red");
+                    $(".btn-clear, .navbar-toggler-icon").css("background-color", "rgb(241, 51, 63)");
                 }
             });
         });

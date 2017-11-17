@@ -44,13 +44,13 @@
                         <a class="nav-link" href="businessPage.html"><b>Business</b></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#two"><b>About</b></a>
+                        <a class="nav-link" href="aboutus.html"><b>About</b></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact"><b>Contact</b></a>
                     </li>
                     <div>
-                        <a class="btn btn-clear btn-md navbar-right navbar-btn" href="login.html" style="box-shadow: 0px 0px; border-radius: 70px">Login</a>
+                        <a class="btn btn-clear btn-md navbar-right navbar-btn" href="login.html" style="box-shadow: 0px 0px; border-radius: 70px; background: rgb(241, 51, 63)">Login</a>
                     </div>
                 </ul>
                 <!-- Collapsible content -->
@@ -200,6 +200,7 @@
     <section id="contact">
         <div class="container-fluid">
             <div class="row">
+                <div class="col-md-1"></div>
                 <div class="col-md-2">
                     <h5 class="grey-header"><b><B>CONTACT</B></b>
                     </h5>
@@ -230,7 +231,7 @@
                         <li><a href="http://medium.com/thisisrudigo" class="grey-text">Medium</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 text-left">
+                <div class="col-md-2 text-left">
                     <h5 class="grey-header"><b><B>Rudigo.com</B></b>
                     </h5>
                     <div class="text-left">
@@ -264,18 +265,31 @@
             $('#demo-btnd').click(function() {
                 window.open('https://docs.google.com/forms/d/e/1FAIpQLSd47RIb9AnRFgJPBcVp4WfQtt1_ikSMO8QwlfwYigYP6AwLhQ/viewform', '_blank');
             });
-            $('#blue').click(function() {
-                $('.btn-clear, #demo-btn, #watch-btn, .navbar-toggler-icon').css('background-color', '#2196F3')
+            // $('#blue').click(function() {
+            //     $('.btn-clear, #demo-btn, #watch-btn, .navbar-toggler-icon').css('background-color', '#2196F3')
 
-            });
-            $('#other').click(function() {
-                $('.btn-clear, #demo-btn, #watch-btn, .navbar-toggler-icon').css('background-color', '#72046f');
-            });
-            $('#orange').click(function() {
-                $('.btn-clear, #demo-btn, #watch-btn, .navbar-toggler-icon').css('background-color', 'rgb(253, 170, 45)')
-            });
-            $('#red').click(function() {
-                $('.btn-clear, #demo-btn, #watch-btn, .navbar-toggler-icon').css('background-color', '#c92834')
+            // });
+            // $('#other').click(function() {
+            //     $('.btn-clear, #demo-btn, #watch-btn, .navbar-toggler-icon').css('background-color', '#72046f');
+            // });
+            // $('#orange').click(function() {
+            //     $('.btn-clear, #demo-btn, #watch-btn, .navbar-toggler-icon').css('background-color', 'rgb(253, 170, 45)')
+            // });
+            // $('#red').click(function() {
+            //     $('.btn-clear, #demo-btn, #watch-btn, .navbar-toggler-icon').css('background-color', '#c92834')
+            // });
+            $(window).scroll(function() {
+                if ($(document).scrollTop() > 650 && $(document).scrollTop() < 1300) {
+                    $(".btn-clear, .navbar-toggler-icon").css("background-color", "#2196F3");
+                } else if ($(document).scrollTop() > 1300 && $(document).scrollTop() < 2050) {
+                    $(".btn-clear, .navbar-toggler-icon").css("background-color", "rgb(253, 170, 45)");
+                } else if ($(document).scrollTop() > 2050 && $(document).scrollTop() < 2700) {
+                    $(".btn-clear, .navbar-toggler-icon").css("background-color", "rgb(241, 51, 63)");
+                } else if ($(document).scrollTop() > 2700 && $(document).scrollTop() < 3450) {
+                    $(".btn-clear, .navbar-toggler-icon").css("background-color", "#2680ff");
+                } else {
+                    $(".btn-clear, .navbar-toggler-icon").css("background-color", "rgb(241, 51, 63)");
+                }
             });
         });
     </script>
