@@ -82,6 +82,11 @@ a.navbar-barnd {
     width: 100%;
 }
 
+ul.grey-text,
+.greish {
+    color: rgb(128, 128, 128) !important;
+}
+
 .sponse {
     font-weight: bolder;
     color: #c1c1c1;
