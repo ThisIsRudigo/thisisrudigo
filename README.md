@@ -15,9 +15,3 @@ This project consists of about Three pages(login excluded):
 
 This website was made fully with md-bootstrap which is a full extension of bootstrap4 and material design. In otherwords, material design + bootstrap = mdbootstrap. 'MD' standing for material design.
 To contribute, you could visit [mdbootstrap's](http://mdbootstrap.com) site for more information and their documentation.
-
-| Features        | Notes                           | Docs                  |
-|-----------------|---------------------------------|-----------------------|
-| Autocomplete    | Used for Autocompletion.        | Docs 2                |
-| Buttons         | Used for making buttons         | Docs 3                |
-| Nothing else    | Used for nothing else           | Docs 1                |
