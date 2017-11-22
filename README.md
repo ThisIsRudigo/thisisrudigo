@@ -19,7 +19,7 @@ To contribute, you could visit [mdbootstrap's](http://mdbootstrap.com) site for 
 | Features        | Notes                           | Docs                  |
 |-----------------|---------------------------------|-----------------------|
 | Autocomplete    | Used for Autocompletion.        | Docs 2                |
-|-----------------|---------------------------------|-----------------------|
+|                 |                                 |                       |
 | Buttons         | Used for making buttons         | Docs 3                |
-|-----------------|---------------------------------|-----------------------|
+|                 |                                 |                       |
 | Nothing else    | Used for nothing else           | Docs 1                |
