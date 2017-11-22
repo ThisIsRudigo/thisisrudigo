@@ -5,7 +5,7 @@ as well as the business details...
 
 This project consists of about Three pages(login excluded):
 ![Rudigo.com](/img/readme.PNG)
-Page Links
+## Page Links
 
 - The Index page: Which has all the details and mission of RUDIGO as a company. It contains like 2/7 of all you need to know.
 
@@ -14,3 +14,4 @@ Page Links
 - Lastly, the Business page: Which has the business registration section and also some info of how a business can recruit interns from rudigo.
 
 This website was made fully with md-bootstrap which is a full extension of bootstrap4 and material design. In otherwords, material design + bootstrap = mdbootstrap. 'MD' standing for material design.
+To contribute, you could visit [mdbootstrap's](http://mdbootstrap.com) site for more information and their documentation.
